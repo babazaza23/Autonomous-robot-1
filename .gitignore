@@ -1,0 +1,79 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node / React / Vite
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+.venv/
+venv/
+env/
+ai-server/.venv/
+ai-server/venv/
+ai-server/env/
+__pycache__/
+ai-server/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Runtime files
+ai-server/frames/
+ai-server/runs/
+ai-server/logs/
+ai-server/wms_uploads/
+ai-server/wms_data/state.json
+ai-server/wms_data/*.tmp
+
+# Dataset / evaluation data
+datasets/
+ai-server/datasets/
+ai-server/eval_dataset_full/
+ai-server/roboflow/
+ai-server/eval_dataset/*
+!ai-server/eval_dataset/README.md
+!ai-server/eval_dataset/ground_truth.csv
+
+# Dataset ảnh đầy đủ nên để ngoài Git hoặc dùng Git LFS/release storage.
+# Giữ README/ground_truth mẫu để mô tả format evaluation.
+
+# Models / large binaries
+*.zip
+*.pt
+*.onnx
+*.engine
+*.weights
+*.bin
+*.dll
+
+# OS / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Reports generated
+vision_metrics_result.csv
+vision_metrics_summary.json
+ai-server/vision_metrics_result.csv
+ai-server/vision_metrics_summary.json
+ai-server/eval_results/
+
+# Clean export artifacts
+project_clean/
